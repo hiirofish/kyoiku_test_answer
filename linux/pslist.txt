@@ -1,0 +1,10 @@
+  PID TTY      STAT   TIME COMMAND
+  564 tty7     Rsl+   6:17 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+  565 tty1     Ss     0:00 /bin/login -f
+  852 tty1     S+     0:00 -bash
+ 1153 pts/0    Ss     0:01 bash
+ 4424 pts/1    Ss+    0:00 bash
+ 8825 pts/0    T      0:00 nano sc_cp.sh
+ 8866 pts/0    T      0:00 nano sc_cp.sh
+ 9071 pts/0    S+     0:00 bash
+ 9072 pts/0    R+     0:00 ps a

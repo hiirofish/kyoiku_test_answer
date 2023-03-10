@@ -1,0 +1,32 @@
+import time
+
+#GPIOの初期設定
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+#PIN settting
+SW_PIN=      #Q1
+LED_PIN=20   #Q2
+
+#switch input gpio setting
+GPIO.setup(SW_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+#led output gpiot setting
+GPIO.setup(LED_PIN, GPIO.OUT)
+
+while True:
+    #スイッチ状態取得
+    sw_status = GPIO.input(SW_PIN)
+
+    #画面出力
+    if sw_status == 0:
+        print("ON")
+        GPIO.output(,1)  #Q2 here , 2nd argument is high =1 , low 
+    else:
+        print("OFF")
+        #Q2 GPIO OFF command here 
+
+
+    #少し待つ
+    time.sleep(0.5)        
